@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustedLogsClub</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flat.css">
+    <link rel="stylesheet" href="css/midnight.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="./asset/js/easylogin.js"></script> 
+    <script src="./asset/js/main.js"></script>-->
+    <link rel="stylesheet" href="css/amaran.min.css">
+    <script src="js/jquery.amaran.min.js"></script>
+    <script>
+        // EasyLogin.options = {
+        //     ajaxUrl: './auth/server',
+        //     lang: {
+        //         "error": "Oops! Something went wrong.",
+        //         "connecting": "Connecting to ",
+        //         "changes_saved": "Your settings have been saved.",
+        //         "pass_changed": "Your password has been changed!",
+        //         "no_messages": "You don't have any messages yet.",
+        //         "loading": "<div class=\"loadersmall\"><\/div>",
+        //         "loadding": "<div class=\"spinner-border\" role=\"status\">\r\n  <span class=\"sr-only\">Loading...<\/span>\r\n<\/div>",
+        //         "message_sent": "Your message has been sent to the Webmaster.",
+        //         "comment": " Comment",
+        //         "comments": " Comments"
+        //     },
+        //     debug: 1,
+        // };
+    </script>
+
+</head>
+
+<body class="authentication-bg">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-offset-4 col-md-4 login-background">
+                <div style="background-color: rgb(210, 50, 45);margin-bottom: 20px;">
+                    <center><img src="images/user-icon.png" style="margin-bottom: -70px;" alt></center>
+
+                </div>
+                <div class="padder">
+                    <h3 class="page-header" style=" margin-top: 50px; color: #000; ">Sign up</h3>
+                                        <form action="index.html" method="post" class="ajax-form clearfix">
+                        <div class="form-group">
+                            <label for="signup-username">Username</label>
+                            <input type="text" name="username" id="signup-username" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">E-mail</label>
+                            <input type="text" name="email" id="signup-email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" name="password" id="signup-password" class="form-control" autocomplete="off" value>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password-confirm">Verify password</label>
+                            <input type="password" name="password-confirm" id="signup-password-confirm" class="form-control" autocomplete="off">
+                        </div>
+                        <!-- <div id="actionButton">
+                            <div class="form-group recaptcha">
+                                <img src="session.php">
+                                <input type="text" name="phrase" autocomplete="off">
+                            </div>
+
+                            <script>
+                                function ReloadCaptcha() {
+                                    $("#actionButton").load('captcha.php');
+                                }
+                            </script>
+                        </div> -->
+
+                        <div class="form-group">
+                            <button type="submit" name="reg_user" class="btn btn-danger btn-lg">Sign up</button>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <a href="index.html" class="btn btn-block btn-danger">Sign in</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // $(document).ready(function() {
+            //     $("#actionButton").load("captcha.php");
+            //     $.ajaxSetup({
+            //         cache: false
+            //     });
+            // });
+        </script>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <p>© 2022 TrustedLogsClub |</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

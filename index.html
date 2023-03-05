@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustedLogsClub</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flat.css">
+    <link rel="stylesheet" href="css/midnight.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="./asset/js/easylogin.js"></script>
+    <script src="./asset/js/main.js"></script> -->
+    <link rel="stylesheet" href="css/amaran.min.css">
+    <script src="js/jquery.amaran.min.js"></script>
+    <script>
+        EasyLogin.options = {
+            ajaxUrl: 'https://trustedlogsclub.herokuapp.com/ajax.php',
+            lang: {
+                "error": "Oops! Something went wrong.",
+                "connecting": "Connecting to ",
+                "changes_saved": "Your settings have been saved.",
+                "pass_changed": "Your password has been changed!",
+                "no_messages": "You don't have any messages yet.",
+                "loading": "<div class=\"loadersmall\"><\/div>",
+                "loadding": "<div class=\"spinner-border\" role=\"status\">\r\n  <span class=\"sr-only\">Loading...<\/span>\r\n<\/div>",
+                "message_sent": "Your message has been sent to the Webmaster.",
+                "comment": " Comment",
+                "comments": " Comments"
+            },
+            debug: 1,
+        };
+    </script>
+
+</head>
+
+<body class="authentication-bg">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-offset-4 col-md-4 login-background">
+                <div style="background-color: rgb(210, 50, 45);margin-bottom: 20px;">
+                    <center><img src="images/user-icon.png" style="margin-bottom: -70px;" alt></center>
+
+                </div>
+
+                <div class="padder">
+                    <h3 class="page-header" style=" margin-top: 50px; color: #000; ">login area</h3>
+                                        <form action="dashboard.html" method="post" class="clearfix ajax-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password </label>
+                            <!-- <span class="pull-right"> <a href="reminder">Forgot password?</a></span> -->
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <hr>
+                        <!-- <div id="actionButton">
+                            <div class="form-group recaptcha">
+                                <img src="session.php">
+                                <input type="text" name="phrase" autocomplete="off">
+                            </div>
+                            <script>
+                                function ReloadCaptcha() {
+                                    $("#actionButton").load('captcha.php');
+                                }
+                            </script>
+                        </div> -->
+                        <div class="form-group">
+
+                            <button type="submit" name="login_user" class="btn btn-danger btn-lg">Log in</button>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+
+                            <a href="register.html" class="btn btn-block btn-danger">Sign up</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            // $(document).ready(function() {
+            //     $("#actionButton").load("captcha.php");
+            //     $.ajaxSetup({
+            //         cache: false
+            //     });
+            // });
+        </script>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <p>© 2022 TrustedLogsClub |</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

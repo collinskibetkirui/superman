@@ -1,0 +1,1 @@
+const registerBtn=document.getElementById("register");registerBtn.addEventListener("click",(e=>{e.preventDefault();let t=document.getElementById("email").value,n=document.getElementById("pass").value;firebase.auth().createUserWithEmailAndPassword(t,n).then((()=>{alert("Account has been created"),window.location.assign("index.html")})).catch((e=>alert(e.message)))}));
